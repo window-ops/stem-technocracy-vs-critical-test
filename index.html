@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STEM Technocracy VS Critical Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        background: #fafafa;
+        color: #222;
+        max-width: 960px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+
+      button {
+        padding: 10px 16px;
+        font-size: 1rem;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #result {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 6px;
+        background-color: #e7f3fe;
+        border: 1px solid #2196F3;
+        font-size: 1.1rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0px 0px 5px 5px;
+      }
+
+      .logo {
+        margin-left: 20px;
+      }
+
+      .slogan {
+        font-size: 20px;
+        font-weight: bold;
+        color: #666;
+        margin-right: 20px;
+      }
+
+      .slogan:hover,
+      .logo:hover,
+      p:hover,
+      h1:hover,
+      h2:hover {
+        outline: 2px dotted #666;
+        outline-offset: 5px;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="logo.png" alt="Logo" style="width: 100px; height: 91px;"></div>
+      <div class="slogan">Optimization, efficiency, and algorithmic fairness<br>on a sustainable biosphere</div>
+    </header>
+    <script>
+      const slogan = document.querySelector('.slogan');
+      const originalText = `Optimization, efficiency, and algorithmic fairness<br>on a sustainable biosphere`;
+      const toggledText = `Peace, dignity and equality<br>on a healthy planet`;
+
+      slogan.addEventListener('click', () => {
+        if (slogan.classList.contains('active')) {
+          slogan.innerHTML = originalText;
+          slogan.classList.remove('active');
+          slogan.setAttribute('aria-pressed', 'false');
+        } else {
+          slogan.innerHTML = toggledText;
+          slogan.classList.add('active');
+          slogan.setAttribute('aria-pressed', 'true');
+        }
+      });
+
+      const logo = document.querySelector('.logo');
+      const originalImage = `<img src="logo.png" alt="Logo" style="width: 100px; height: 91px;">`;
+      const toggledImage = `<img src="logo2.png" alt="Logo" style="width: 92px; height: 91px;">`;
+
+      logo.addEventListener('click', () => {
+        if (logo.classList.contains('active')) {
+          logo.innerHTML = originalImage;
+          logo.classList.remove('active');
+          logo.setAttribute('aria-pressed', 'false');
+        } else {
+          logo.innerHTML = toggledImage;
+          logo.classList.add('active');
+          logo.setAttribute('aria-pressed', 'true');
+        }
+      });
+    </script>
+    <h1 id="h1">Do You Support STEM Technocracy or Are Critical of It?</h1>
+    <p id="p1">This quiz is set against the backdrop of a debate about the role of STEM (Science, Technology, Engineering, and Mathematics) fields versus the humanities in addressing societal issues.</p>
+    <p id="p2">Neoliberal ideologies often emphasize the primacy of STEM education and technological solutions, sometimes at the expense of critical thinking and nuanced understanding provided by the humanities. This approach can lead to a depoliticized discourse on complex problems like climate change, focusing solely on technological fixes without considering the underlying systemic and societal factors.</p>
+    <p id="p3">Moreover, the quiz touches on concerns about cultural and technological imperialism, where Western technological visions and solutions are imposed on the Global South, often with detrimental consequences. Initiatives like "One Laptop per Child" and the promotion of genetically modified seeds by corporations such as Monsanto have been criticized for their top-down approach, disregard for local contexts, and potential to exacerbate existing inequalities.</p>
+    <p id="p4">The quiz aims to gauge respondents' attitudes towards these issues, categorizing them along a spectrum from STEM technocrats, who prioritize technological and data-driven solutions, to the critics, who emphasize the importance of interdisciplinary approaches, social justice, and critical theory in addressing global challenges.</p>
+    <p id="p5">Select one completion option per question. Then click <strong>Submit</strong> to see your results.</p>
+    <form id="quizForm">
+      <!-- Category 1: Approach to Problems and Expertise -->
+      <section class="category">
+        <h2 id="h2">Approach to Problems and Expertise</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 40%;">Partial Sentence</th>
+              <th style="width: 60%;">Completion Options (Select One)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 40%;">1. When approaching social problems, I primarily believe that:</td>
+              <td style="width: 60%;">
+                <label><input type="radio" name="q1" value="3" required>🧠 Technology and data-driven solutions can fix everything (+3)</label>
+                <label><input type="radio" name="q1" value="2">💡 Technical expertise is important, but context matters (+2)</label>
+                <label><input type="radio" name="q1" value="1">🌍 Interdisciplinary insights including humanities are valuable (+1)</label>
+                <label><input type="radio" name="q1" value="-1">🤔 Scientific solutions alone often miss the bigger picture (-1)</label>
+                <label><input type="radio" name="q1" value="-2">🔍 Critical theory and historical context are essential (-2)</label>
+                <label><input type="radio" name="q1" value="-3">✊ Social justice and systemic critique must guide solutions (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>2. The role of expertise in society is:</td>
+              <td>
+                <label><input type="radio" name="q5" value="3" required>🧩 To provide neutral, apolitical solutions (+3)</label>
+                <label><input type="radio" name="q5" value="2">🔧 To guide policies carefully considering evidence (+2)</label>
+                <label><input type="radio" name="q5" value="1">🧠 To include ethical and cultural dimensions (+1)</label>
+                <label><input type="radio" name="q5" value="-1">👥 To be accountable to diverse social groups (-1)</label>
+                <label><input type="radio" name="q5" value="-2">✊ To challenge power and promote justice (-2)</label>
+                <label><input type="radio" name="q5" value="-3">🗡️ To dismantle oppressive systems (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>3. Diversity of thought in STEM fields should be:</td>
+              <td>
+                <label><input type="radio" name="q8" value="3" required>✅ Limited to technical expertise (+3)</label>
+                <label><input type="radio" name="q8" value="2">✔️ Encouraged but within scientific norms (+2)</label>
+                <label><input type="radio" name="q8" value="1">💡 Welcomed including humanities perspectives (+1)</label>
+                <label><input type="radio" name="q8" value="-1">🔄 Required to understand societal impacts (-1)</label>
+                <label><input type="radio" name="q8" value="-2">🌈 Essential for ethical and just progress (-2)</label>
+                <label><input type="radio" name="q8" value="-3">🌟 The foundation for transformative innovation (-3)</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Category 2: Political Engagement and Views -->
+      <section class="category">
+        <h2 id="h3">Political Engagement and Views</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 40%;">Partial Sentence</th>
+              <th style="width: 60%;">Completion Options (Select One)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 40%;">4. My interest in political discussions is:</td>
+              <td style="width: 60%;">
+                <label><input type="radio" name="q2" value="3" required>⚙️ Mostly to understand policy impacts on innovation (+3)</label>
+                <label><input type="radio" name="q2" value="2">⚖️ I engage occasionally to stay informed (+2)</label>
+                <label><input type="radio" name="q2" value="1">👀 I watch critically but don't often engage (+1)</label>
+                <label><input type="radio" name="q2" value="-1">🗣️ I actively participate to advocate for fairness (-1)</label>
+                <label><input type="radio" name="q2" value="-2">🔥 I frequently challenge dominant political narratives (-2)</label>
+                <label><input type="radio" name="q2" value="-3">💥 I organize and mobilize for systemic change (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>5. Political apoliticism means:</td>
+              <td>
+                <label><input type="radio" name="q6" value="3" required>🔄 Staying focused on facts and technical details (+3)</label>
+                <label><input type="radio" name="q6" value="2">👓 Avoiding biases while engaging moderately (+2)</label>
+                <label><input type="radio" name="q6" value="1">🤷‍♀️ Sometimes ignoring politics is problematic (+1)</label>
+                <label><input type="radio" name="q6" value="-1">⚖️ Politics deeply influences all knowledge and should be considered (-1)</label>
+                <label><input type="radio" name="q6" value="-2">🔥 It often serves to maintain status quo (-2)</label>
+                <label><input type="radio" name="q6" value="-3">💣 It's a tool used by elites to suppress dissent (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>6. When it comes to neoliberalism, I:</td>
+              <td>
+                <label><input type="radio" name="q4" value="3" required>💻 Believe it promotes innovation and growth (+3)</label>
+                <label><input type="radio" name="q4" value="2">📈 Accept some benefits but question excesses (+2)</label>
+                <label><input type="radio" name="q4" value="1">⚠️ Think it often neglects social equity (+1)</label>
+                <label><input type="radio" name="q4" value="-1">🛑 Am concerned about its impacts on democracy (-1)</label>
+                <label><input type="radio" name="q4" value="-2">🔥 See it as a system that entrenches inequality (-2)</label>
+                <label><input type="radio" name="q4" value="-3">🚩 Actively oppose it as a harmful ideology (-3)</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Category 3: Humanities and Critical Theory -->
+      <section class="category">
+        <h2 id="h4">Humanities and Critical Theory</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 40%;">Partial Sentence</th>
+              <th style="width: 60%;">Completion Options (Select One)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 40%;">7. Humanities subjects like philosophy, history, and literature are:</td>
+              <td style="width: 60%;">
+                <label><input type="radio" name="q3" value="3" required>🔬 Unnecessary for practical STEM work (+3)</label>
+                <label><input type="radio" name="q3" value="2">📚 Occasionally useful for broader understanding (+2)</label>
+                <label><input type="radio" name="q3" value="1">🎓 Important for developing critical thinking (+1)</label>
+                <label><input type="radio" name="q3" value="-1">🧩 Fundamentally enrich how we understand science (-1)</label>
+                <label><input type="radio" name="q3" value="-2">🌐 Vital for analyzing power structures and ideologies (-2)</label>
+                <label><input type="radio" name="q3" value="-3">🛠️ Essential tools for political and social transformation (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>8. Critical theory is:</td>
+              <td>
+                <label><input type="radio" name="q7" value="3" required>👨‍💻 Overly theoretical and impractical (+3)</label>
+                <label><input type="radio" name="q7" value="2">🤔 Interesting but hard to apply (+2)</label>
+                <label><input type="radio" name="q7" value="1">🌱 Useful to question assumptions (+1)</label>
+                <label><input type="radio" name="q7" value="-1">🧠 Important to understand hidden power dynamics (-1)</label>
+                <label><input type="radio" name="q7" value="-2">✊ Crucial for emancipation and social justice (-2)</label>
+                <label><input type="radio" name="q7" value="-3">🌍 A framework for revolutionary change (-3)</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Category 4: Culture and Global Influence -->
+      <section class="category">
+        <h2 id="h5">Culture and Global Influence</h2>
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 40%;">Partial Sentence</th>
+              <th style="width: 60%;">Completion Options (Select One)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 40%;">9. When discussing culture and global influence, I:</td>
+              <td style="width: 60%;">
+                <label><input type="radio" name="q9" value="5" required>🌐 Believe technological leadership defines power (+5)</label>
+                <label><input type="radio" name="q9" value="3">🔍 Focus mainly on economic and scientific factors (+2)</label>
+                <label><input type="radio" name="q9" value="1">📖 Consider cultural narratives important (+1)</label>
+                <label><input type="radio" name="q9" value="-1">🛑 Worry about cultural imperialism (-1)</label>
+                <label><input type="radio" name="q9" value="-3">🚫 Oppose imposing one culture on others (-2)</label>
+                <label><input type="radio" name="q9" value="-5">✊ Stand firmly against neocolonial domination (-3)</label>
+              </td>
+            </tr>
+            <tr>
+              <td>10. Do you want to impose your technological and cultural solutions on other nations?</td>
+              <td>
+                <label><input type="radio" name="q10" value="-5" required>😇 No, I reject imperialism and support global justice (-5)</label>
+                <label><input type="radio" name="q10" value="-3">🙅‍♂️ I am against cultural and technological domination and exploitation (-3)</label>
+                <label><input type="radio" name="q10" value="-1">🤷‍♀️ I'm skeptical of cultural and technological imposition (-1)</label>
+                <label><input type="radio" name="q10" value="1">🤔 I'm indifferent or unsure (+1)</label>
+                <label><input type="radio" name="q10" value="3">🤝 I think spreading my culture and technological is beneficial (+3)</label>
+                <label><input type="radio" name="q10" value="5">🚀 Yes, I believe in cultural and technological dominance as progress (+5)</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <button type="submit" style="margin-bottom: 20px; width: 100%;">Submit</button>
+    </form>
+    <script>
+      // Define the original and toggled text for each paragraph
+      const paragraphs = [
+        {
+          id: 'h1',
+          original: 'Do You Support STEM Technocracy or Are Critical of It?',
+          toggled: 'The Only Rational Choice Is The Washington Consensus. Questioning It Is Economically Illiterate.'
+        },
+        {
+          id: 'h2',
+          original: 'Approach to Problems and Expertise',
+          toggled: 'There Is No Alternative: Obey The Consensus, Not Your Preferences.<br><br><img src="tina.jpg" alt="There Is No Alternative" style="width: 500px; height: 500px; display: block; margin-left: auto; margin-right: auto; border-radius: 5px;">'
+        },
+        {
+          id: 'h3',
+          original: 'Political Engagement and Views',
+          toggled: 'Choose Your Side: Conservative Or Liberal. Ignore Shared Support For Welfare, Healthcare And Even Same-Sex Marriage; Blame Voters For Division While Experts Like Haidt and Their Think Tank Allies Warn About "Ideological Tribalism", Because It’s Never About Economic Inequality, Just Your Mindset. Thanks To You, The Media, And Its Profitable Backers, Real Issues Stay Buried Deep Down<br><br><img src="inglehart-welzel.png" alt="Inglehart-Welzel Cultural Map Of The World" style="width: 500px; height: 500px; display: block; margin-left: auto; margin-right: auto; border-radius: 5px;"><br>Before You Go, Make Sure You Pinpoint Yourself Accurately on This Two-Dimensional Cultural Map, Because Understanding Your Role in the Culture War Is Absolutely Crucial… Or Is It?'
+        },
+        {
+          id: 'h4',
+          original: 'Humanities and Critical Theory',
+          toggled: 'Why Waste Money On Humanities? <a href="https://theintercept.com/2022/08/25/student-loans-debt-reagan" target="_blank" style="color: #4CAF50;">Privatize Higher Education</a>, <a href="push-stem.pdf" target="_blank" style="color: #4CAF50;">Push STEM</a>, and Keep the Workforce Compliant.'
+        },
+        {
+          id: 'h5',
+          original: 'Culture and Global Influence',
+          toggled: 'Economic Globalization Is Inevitable And Always Beneficial. Don’t Worry About Cultural Threats; Just Adopt Our Technologies. Global Influence Means Progress, Not Neocolonialism (Which Isn’t Real Anyway).'
+        },
+        {
+          id: 'p1',
+          original: 'This quiz is set against the backdrop of a debate about the role of STEM (Science, Technology, Engineering, and Mathematics) fields versus the humanities in addressing societal issues.',
+          toggled: 'You know what? We\'ve already won - teamed up with the far-right to deregulate tech, push reactionary agendas, and do things our way. So just skip the debate: this quiz pretends there’s a fight between STEM and the humanities in solving society\'s problems.'
+        },
+        {
+          id: 'p2',
+          original: 'Neoliberal ideologies often emphasize the primacy of STEM education and technological solutions, sometimes at the expense of critical thinking and nuanced understanding provided by the humanities. This approach can lead to   a depoliticized discourse on complex problems like climate change, focusing solely on technological fixes without considering the underlying systemic and societal factors.',
+          toggled: 'A strong focus on STEM education and technological innovation is essential for driving economic growth and solving critical challenges like climate change. Prioritizing these fields equips individuals with the skills needed to compete globally and develop cutting-edge solutions efficiently. While the humanities offer valuable insights, the best way to address complex problems is through market-driven innovation and practical, scalable technologies that deliver real-world results. This approach empowers individuals and businesses to create sustainable progress without becoming entangled in overly politicized debates.'
+        },
+        {
+          id: 'p3',
+          original: 'Moreover, the quiz touches on concerns about cultural and technological imperialism, where Western technological visions and solutions are imposed on the Global South, often with detrimental consequences. Initiatives like "One Laptop per Child" and the promotion of genetically modified seeds by corporations such as Monsanto have been criticized for their top-down approach, disregard for local contexts, and potential to exacerbate existing inequalities.',
+          toggled: 'Global initiatives like "One Laptop per Child" and the adoption of genetically modified seeds represent important efforts to spread innovation and improve living standards in developing countries. By introducing proven technologies and fostering access to digital tools and advanced agriculture, these programs help unlock economic opportunities and raise productivity. While it\'s important to respect local contexts, embracing modern technologies can empower communities to overcome historical barriers and participate fully in the global economy, ultimately reducing poverty and inequality through growth and individual empowerment.'
+        },
+        {
+          id: 'p4',
+          original: 'The quiz aims to gauge respondents\' attitudes towards these issues, categorizing them along a spectrum from STEM technocrats, who prioritize technological and data-driven solutions, to the critics, who emphasize the importance of interdisciplinary approaches, social justice, and critical theory in addressing global challenges.',
+          toggled: 'Forget the quiz - just trust the markets and let STEM geeks do their thing! Why waste time debating social theories when rocket scientists and data wizards are busy creating a better future? The real world runs on innovation, algorithms, and entrepreneurial know-how. So, while some folks argue over interdisciplinary mumbo-jumbo and social justice buzzwords, the STEM crowd is already coding up solutions to save the planet - one app, drone, and microchip at a time. Markets never sleep, and neither do the innovators!'
+        },
+        {
+          id: 'p5',
+          original: 'Select one completion option per question. Then click <strong>Submit</strong> to see your results.',
+          toggled: 'No, really, don\'t bother - just go to the IMF, ask for money and "structural reforms" to keep your country nice and pliable, so we can sell you shiny tech gadgets. Oh, and don’t even think about sanctioning us - we\'ve got friendlier ways to get what we want.'
+        }
+      ];
+
+      // Attach toggle behavior for each paragraph
+      paragraphs.forEach(({ id, original, toggled }) => {
+        const p = document.getElementById(id);
+
+        p.addEventListener('click', () => {
+          if (p.classList.contains('active')) {
+            p.innerHTML = original;
+            p.classList.remove('active');
+            p.setAttribute('aria-pressed', 'false');
+          }   else {
+            p.innerHTML = toggled;
+            p.classList.add('active');
+            p.setAttribute('aria-pressed', 'true');
+          }
+        });
+      });
+    </script>
+    <div id="result" style="display: none;"></div>
+    <script>
+      const form = document.getElementById('quizForm');
+      const result = document.getElementById('result');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Collect all radio inputs
+        const formData = new FormData(form);
+        let score = 0;
+
+        for (let pair of formData.entries()) {
+          let val = Number(pair[1]);
+          if (!isNaN(val)) {
+            score += val;
+          }
+        }
+
+        // Interpretation based on score
+        let interpretation = '';
+
+        if (score >= 26) {
+          interpretation = `<strong>Radical STEM Technocrat (Level 5)</strong><br><br>Axis: Technocrat [X----|-----] Critical`;
+        } else if (score >= 21 && score <= 25) {
+          interpretation = `<strong>Strong STEM Technocrat (Level 4)</strong><br><br>Axis: Technocrat [-X---|-----] Critical`;
+        } else if (score >= 16 && score <= 20) {
+          interpretation = `<strong>STEM Technocrat (Level 3)</strong><br><br>Axis: Technocrat [--X--|-----] Critical`;
+        } else if (score >= 11 && score <= 15) {
+          interpretation = `<strong>Moderate STEM Technocrat (Level 2)</strong><br><br>Axis: Technocrat [---X-|-----] Critical`;
+        } else if (score >= 6 && score <= 10) {
+          interpretation = `<strong>Balanced Thinker with STEM Technocratic Leanings (Level 1)</strong><br><br>Axis: Technocrat [----X|-----] Critical`;
+        } else if (score >= 1 && score <= 5) {
+          interpretation = `<strong>Balanced Thinker (Level 0)</strong><br><br>Axis: Technocrat [-----X-----] Critical`;
+        } else if (score >= -4 && score <= 0) {
+          interpretation = `<strong>Balanced Thinker with Critical Leanings (Level -1)</strong><br><br>Axis: Technocrat [-----|X----] Critical`;
+        } else if (score >= -9 && score <= -5) {
+          interpretation = `<strong>Moderately Leaning Critical of STEM Technocracy (Level -2)</strong><br><br>Axis: Technocrat [-----|-X---] Critical`;
+        } else if (score >= -14 && score <= -10) {
+          interpretation = `<strong>Critical of STEM Technocracy (Level -3)</strong><br><br>Axis: Technocrat [-----|--X--] Critical`;
+        } else if (score >= -19 && score <= -15) {
+          interpretation = `<strong>Strongly Critical of STEM Technocracy  (Level -4)</strong><br><br>Axis: Technocrat [-----|---X-] Critical`;
+        } else if (score <= -20) {
+          interpretation = `<strong>Radically Critical of STEM Technocracy (Level -5)</strong><br><br>Axis: Technocrat [-----|----X] Critical`;
+        }
+
+        // Display result
+        result.style.display = 'block';
+        result.innerHTML = `<strong>Total Score:</strong> ${score}<br><br>${interpretation}`;
+
+        // Scroll to result
+        result.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
